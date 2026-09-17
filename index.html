@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+        <link rel= "stylesheet" href="style.css">
+
+     </head>
+
+    <body style="background: url(images/fondo.png)">      
+        
+        <!-- PANTALLA 1: Inicio -->
+        <section class="window main" id="pantalla-1">            
+            <div class="workback">
+                <img src="images/Bienvenido.png" height="300px" class="bienvenido" style="animation-duration: 4s, 3s; animation-delay: 0s;">
+                <img src="images/inicioUsagi.gif" height="300px" class="usagi">
+            </div>
+
+            <div class="box boxI"> 
+                <section>
+                    <p style="text-align: center;">Ey qué tal?, entra no tengas miedo</p>
+                    <p style="text-align: center;">( ͡o ͜ʖ ͡o)</p>
+                    <button class="boton botonI" data-ir="pantalla-2">
+                        <img src="images/BotonI.png" height="150px">
+                    </button>
+                </section>
+            </div>
+        </section>
+
+        <!-- PANTALLA 2: Opciones -->
+         <section class="window" id="pantalla-2">
+            <div>
+                <img src="images/deco1.png" height="450px" class="deco1">
+                <img src="images/deco2.png" height="670px" class="deco2">
+                <img src="images/Opciones.gif" height="400px" class="mondongo">               
+            </div>
+
+            <div>
+                <button class="boton boton1" data-ir="pantalla-3">
+                    <img src="images/Boton1.png" height="230px">
+                </button>
+
+                <button class="boton-music boton2" data-ir="pantalla-4">
+                    <img src="images/Boton2.png" height="150px">
+                </button>
+
+                <button class="boton boton3" data-ir="pantalla-5">
+                    <img src="images/Boton3.png" height="230px">
+                </button>
+
+                <button class="boton boton4" data-ir="pantalla-6">
+                    <img src="images/Boton4.png" height="230px">
+                </button>
+
+                <button class="boton botonR" data-ir="pantalla-1">
+                    <img src="images/BotonR.png" height="200px">
+                </button>
+            </div>   
+         </section>
+
+        <!-- PANTALLA 3: Mensaje -->
+         <section class="window" id="pantalla-3">
+            <div>
+                <img src="images/deco3_1.png" height="100px" class="deco3-1">
+                <img src="images/deco3_2.png" height="250px" class="deco3-2">
+                <img src="images/deco3_3.png" height="140px" class="deco3-3">
+                <img src="images/usagiCarta.gif" height="400px" class="usagiCarta">                 
+            </div>
+
+            <div class="box msg1"> 
+                <section>
+                    <p style="text-align: justify;">Olas Adris bienvenido jiji, este sitio lo hice con mucho cariño para ti con 
+                        el fin de recordar todo lo que hemos vivido este 
+                        año con varias secciones (◡ ω ◡).
+                    </p>
+                    <p style="text-align: justify;">
+                        Espero te guste mucho jeje, te amo mucho cakesito y disfruta el recorrido (◍•ᴗ•◍)❤.
+                    </p>
+                </section>
+            </div>
+
+            <div>
+                <button class="boton botonR-2" data-ir="pantalla-2">
+                    <img src="images/BotonR.png" height="200px">
+                </button>
+            </div>
+
+            <div class="lluvia-estrellas">
+                <img src="images/estrella.png" class="estrella" style="left: 5%; animation-duration: 4s, 3s; animation-delay: 0s;">
+                <img src="images/estrella.png" class="estrella" style="left: 15%; animation-duration: 5s, 4s; animation-delay: 0.5s;">
+                <img src="images/estrella.png" class="estrella" style="left: 25%; animation-duration: 3.5s, 5s; animation-delay: 1s;">
+                <img src="images/estrella.png" class="estrella" style="left: 35%; animation-duration: 4.5s, 3.5s; animation-delay: 1.5s;">
+                <img src="images/estrella.png" class="estrella" style="left: 45%; animation-duration: 4s, 4s; animation-delay: 2s;">
+                <img src="images/estrella.png" class="estrella" style="left: 55%; animation-duration: 5s, 3s; animation-delay: 0.3s;">
+                <img src="images/estrella.png" class="estrella" style="left: 65%; animation-duration: 3.5s, 4.5s; animation-delay: 0.8s;">
+                <img src="images/estrella.png" class="estrella" style="left: 75%; animation-duration: 4.5s, 3s; animation-delay: 1.3s;">
+                <img src="images/estrella.png" class="estrella" style="left: 85%; animation-duration: 4s, 5s; animation-delay: 1.8s;">
+                <img src="images/estrella.png" class="estrella" style="left: 95%; animation-duration: 3.5s, 4s; animation-delay: 0.6s;">
+            </div>
+         </section>
+
+         <!-- PANTALLA 4: Musica -->
+         <section class="window" id="pantalla-4">
+            <div>
+                <img src="images/deco4_1.png" height="200px" class="deco4-1">
+                <img src="images/deco4_2.png" height="757px" class="deco4-2">
+                <img src="images/KoriMusic.gif" height="350px" class="koriMusic">
+            </div>
+
+            <iframe data-testid="embed-iframe" class ="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/77gWGhU7UUNeRrEW69XtzC?utm_source=generator&si=4ec0da82dde64d16" 
+            width="45%" height="352" frameBorder="0" allowfullscreen="" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+            <div class="box msg2"> 
+                <section>
+                    <p style="text-align: center;">Cada canción me recuerda a tí (♡ω♡ ) ~♪.
+                    </p>
+                </section>
+            </div>
+
+            <div>
+                <button class="boton botonR-2" data-ir="pantalla-2">
+                    <img src="images/BotonR.png" height="200px">
+                </button>
+            </div>            
+         </section>
+         
+         <!-- PANTALLA 5: Fotos -->
+          <section class="window" id="pantalla-5">
+            <div> 
+                <img src="images/KoriFotos.gif" height="300px" class="koriFotos">
+            </div>
+
+            <div>
+                <button class="boton botonR-2" data-ir="pantalla-2">
+                    <img src="images/BotonR.png" height="200px">
+                </button>
+            </div>
+
+            <div class="box msg3"> 
+                <section>
+                    <p style="text-align: justify;" class="parrafo">Baja para ver más y más de nuestros recuerdos jeje (っ˘ω˘ς).
+                    </p>
+                </section>
+            </div>
+
+            <div class="galeria">
+                <div class="columna-fotos">
+                    <img src="images/UsagiLentes.jpg">
+                    <img src="images/Usagi2.png">
+                    <img src="images/foto1.png">
+                    <img src="images/foto3.png">
+                    <img src="images/foto5.png">
+                    <img src="images/foto7.png">
+                    <img src="images/foto9.png">
+                    <img src="images/foto11.png">
+                    <img src="images/foto13.png">
+                    <img src="images/foto15.png">
+                    <img src="images/foto17.png">
+                    <img src="images/foto19.png">
+                    <img src="images/foto21.png">
+                    <img src="images/foto23.png">
+                    
+                </div>
+                <div class="columna-fotos">
+                    <img src="images/Momonga.jpg">
+                    <img src="images/Momonga2.png">
+                    <img src="images/foto2.png">
+                    <img src="images/foto4.png">
+                    <img src="images/foto6.png">
+                    <img src="images/foto8.png">
+                    <img src="images/foto10.png">
+                    <img src="images/foto12.png">
+                    <img src="images/foto14.png">
+                    <img src="images/foto16.png">
+                    <img src="images/foto18.png">
+                    <img src="images/foto20.png">
+                    <img src="images/foto22.png">
+                    <img src="images/foto24.png">
+                    <img src="images/foto26.png">
+                    
+                </div>
+            </div>
+          </section>
+
+        <!-- PANTALLA 6: Juegos -->
+        <section class="window" id="pantalla-6">            
+            <div>
+                <img src="images/reaper.gif" height="250px" class="reaper">
+                <img src="images/junkerqueen.gif" height="300px" class="junker">
+                <img src="images/deco5_1.png" height="350px" class="heart">
+            </div>
+
+            <div class="box msg4"> 
+                <section>
+                    <p style="text-align: center;" class="parrafo2">Jugar y ver videos junto a ti es siempre lo mejor (〃￣ω￣〃), y divertido tmb JKDSJDSKJ.</p>
+                </section>
+            </div>
+
+            <div class="carrusel">
+                <img src="images/carru0.png" class="img-actual" id="img-carrusel" height="295px">
+                <div>
+                    <button class="boton botonA">
+                        <img src="images/BotonA.png" height="150px">
+                    </button>
+
+                    <button class="boton botonD">
+                        <img src="images/BotonD.png" height="150px">
+                    </button>  
+                </div>
+            </div>
+
+            <div>
+                <button class="boton botonR-2" data-ir="pantalla-2">
+                    <img src="images/BotonR.png" height="200px">
+                </button>
+            </div>
+        </section>
+
+        <script src="web.js"></script>
+
+    </body>
+</html>
